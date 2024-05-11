@@ -39,7 +39,7 @@ Zaman = data['Tarih/Saat']
 # plt.show()  # Grafiği göster
 
 # Model olustur
-model = IsolationForest(n_estimators=100, contamination=0.5)
+model = IsolationForest(n_estimators=100, contamination=0.5, max_samples=744)
 
 # Modeli egit
 model.fit(Fiyat.values.reshape(-1,1))
